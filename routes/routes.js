@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const {profileController, signOnController, signUpController} = require('../controllers/controllers')
+const {profileController, signInController, signUpController} = require('../controllers/controllers')
+const {authToken} = require('../auth/auth');
 
-router.get('main/:id', profileController);
+router.get('/main/:id',authToken, profileController);
 
-router.post('/sign-on', signOnController);
+router.post('/sign-in', signInController);
 
 router.post('/sign-up', signUpController);
 

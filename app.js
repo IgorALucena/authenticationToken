@@ -5,6 +5,8 @@ const jwt = require('jsonwebtoken');
 const routerValidation = require('./routes/routes');
 const app = express();
 
+app.use(express.json());
+
 app.use('/', routerValidation);
 
 app.listen(PORT, ()=>{
