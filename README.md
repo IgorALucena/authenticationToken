@@ -7,7 +7,7 @@ The project in question sought to put into practice studies regarding the use of
 
 ### The challenge
 
-- Create a user creation and login API with JWT authentication and database query from the Prisma ORM..
+- Create a user creation and login API with JWT authentication and database query from the Prisma ORM.
 
 ## Process
 
